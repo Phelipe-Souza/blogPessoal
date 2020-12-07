@@ -7,18 +7,30 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FeedComponent } from './feed/feed.component';
+import { PerfilLateralComponent } from './perfil-lateral/perfil-lateral.component';
+import { LoginComponent } from './login/login.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { HttpClientModule} from '@angular/common/http'
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    FeedComponent,
+    PerfilLateralComponent,
+    LoginComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
